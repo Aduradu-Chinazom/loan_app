@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+    <h1 id="zombie">&hearts; Zomie &hearts;</h1>
+    <form id="form">
+
+        <div class="flex">
+            <p class="label">Account Balance:</p>
+            <input type="number" placeholder="Enter your account balance" id="input1">
+
+            <span id="aErr"></span>
+        </div>
+
+        <div class="flex">
+            <p class="label">Loan amount:</p>
+            <input type="number" placeholder="Enter your loan amount" id="input2">
+
+            <span id="bErr"></span>
+        </div>
+
+        <div class="flex">
+            <p class="label">Credit:</p>
+            <select id="input3">
+                <option value="">Choose an option</option>
+                <option value="1 month ago" id="input3_opt1">1 month ago</option>
+                <option value="2 months ago" id="input3_opt2">2 months ago</option>
+                <option value="3 months ago" id="input3_opt3">3 months ago</option>
+                <option value="4 months ago" id="input3_opt4">4 months ago</option>
+                <option value="5 months ago" id="input3_opt5">5 months ago</option>
+                <option value="6 months ago" id="input3_opt6">6 months ago</option>
+            </select>
+
+            <span id="cErr"></span>
+        </div>
+
+        <div class="flex">
+            <p class="label">When was the last time you deposited into the bank:</p>
+            <select id="input4">
+                <option value="">Choose an option</option>
+                <option value="Within the last 15 days" id="input4_opt2">Within the last 15 days</option>
+                <option value="Within the last 25 days" id="input4_opt3">Within the last 25 days</option>
+                <option value="1 month ago" id="input4_opt4">1 month ago</option>
+                <option value="2 months ago" id="input4_opt5">2 months ago</option>
+                <option value="4 months ago" id="input4_opt6">4 months ago</option>
+            </select>
+
+            <span id="dErr"></span>
+        </div>
+
+        <div class="flex">
+            <p class="label">When was the last time you took a loan:</p>
+            <select id="input5">
+                <option value="">Choose an option</option>
+                <option value="Within the last 2 months" id="input5_opt1">Within the last 2 months</option>
+                <option value="Within the last 4 months" id="input5_opt2">Within the last 4 months</option>
+                <option value="Within the last 6 months" id="input5_opt3">Within the last 6 months</option>
+                <option value="Over 7 months ago" id="input5_opt4">It's been over 7 months</option>
+            </select>
+
+            <span id="eErr"></span>
+        </div>
+
+        <div class="flex">
+            <p class="label">When do you plan on paying back:</p>
+            <select id="input6">
+                <option value="">Choose an option</option>
+                <option value="In the next 2 months" id="input6_opt1">In the next 2 months</option>
+                <option value="In the next 5 months" id="input6_opt2">In the next 5 months</option>
+                <option value="In the next 6 months" id="input6_opt3">In the next 6 months</option>
+            </select>
+
+            <span id="fErr"></span>
+        </div>
+
+        <div class="flex">
+            <p class="label">Select your account type:</p>
+            <select id="input7">
+                <option value="">Choose an option</option>
+                <option value="Savings" id="input7_opt1">Savings</option>
+                <option value="Current" id="input7_opt2">Current</option>
+            </select>
+
+            <span id="gErr"></span>
+        </div>
+
+        <button type="button" id="submit">Submit</button>
+
+        <h3 id="success"></h3>
+    </form>
+
+    <script src="script/js.js"></script>
+</body>
+</html>
